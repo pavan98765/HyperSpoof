@@ -21,11 +21,18 @@ The HyperSpoof framework consists of three main components:
 
 ## Datasets
 
-HyperSpoof has been tested on multiple datasets to validate its effectiveness:
-- **RECOD-MPAD**: Mobile-based presentation attack dataset.
-- **CelebA-Spoof**: Large-scale dataset with rich annotations.
-- **LCC FASD**: Focused on face anti-spoofing.
-- **CASIA-SURF**: Multi-modal benchmark dataset.
+This project utilizes several datasets for face anti-spoofing research:
+
+- **ReCodMpad**: A comprehensive dataset for face presentation attack detection. [Access it here](https://zenodo.org/records/3749309).
+
+- **CASIA-SURF**: A large-scale multi-modal benchmark for face anti-spoofing. [Access it here](https://sites.google.com/view/face-anti-spoofing-challenge/dataset-download/casia-surf-cefacvpr2020).
+
+- **CelebA-Spoof**: A large-scale face anti-spoofing dataset with rich annotations. [Access it here](https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebA_Spoof.html).
+
+- **LCC FASD**: The LivDet Face dataset for face anti-spoofing. [Access it here](https://www.kaggle.com/datasets/faber24/lcc-fasd).
+
+Please ensure you comply with each dataset's licensing agreements and usage policies.
+
 
 ## Results
 
@@ -40,20 +47,6 @@ HyperSpoof achieves superior generalization compared to baseline models, with hi
 
 ### Cross-Attack Evaluation
 HyperSpoof demonstrates robust performance across diverse attack modalities, significantly outperforming existing models.
-
-## Datasets
-
-This project utilizes several datasets for face anti-spoofing research:
-
-- **ReCodMpad**: A comprehensive dataset for face presentation attack detection. [Access it here](https://zenodo.org/records/3749309).
-
-- **CASIA-SURF**: A large-scale multi-modal benchmark for face anti-spoofing. [Access it here](https://sites.google.com/view/face-anti-spoofing-challenge/dataset-download/casia-surf-cefacvpr2020).
-
-- **CelebA-Spoof**: A large-scale face anti-spoofing dataset with rich annotations. [Access it here](https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebA_Spoof.html).
-
-- **LCC FASD**: The LivDet Face dataset for face anti-spoofing. [Access it here](https://www.kaggle.com/datasets/faber24/lcc-fasd).
-
-Please ensure you comply with each dataset's licensing agreements and usage policies.
 
 
 ## Installation
