@@ -1,0 +1,168 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.pickle
+
+# Model checkpoints and logs
+checkpoints/
+logs/
+runs/
+wandb/
+tensorboard/
+mlruns/
+*.log
+
+# Dataset directories (exclude large datasets from repo)
+data/
+datasets/
+RECOD-MPAD/
+CelebA-Spoof/
+LCC_FASD/
+CASIA-SURF/
+ARAD-1K/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Results and outputs
+results/
+outputs/
+experiments/
+saved_models/
+pretrained/
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.mat
+
+# Exclude the paper PDF from tracking (if needed)
+Hyperspoof.pdf
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~*
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Profiling
+*.prof
+*.lprof
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Cython
+cython_debug/
+
+# Large media files
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# GPU/CUDA
+*.cudnn
+*.cubin
+
+# Secrets and credentials
+secrets/
+credentials/
+*.pem
+*.key
+*.cert
