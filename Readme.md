@@ -8,7 +8,7 @@ HyperSpoof is a novel framework for face anti-spoofing that leverages hyperspect
 ## 🏗️ Architecture Overview
 
 <div align="center">
-  <img src="assets/hyperspoof_pipeline.png" alt="HyperSpoof Pipeline Architecture" width="100%">
+  <img src="assets/pipeline_hyperspoof.png" alt="HyperSpoof Pipeline Architecture" width="100%">
   <p><em><strong>Figure 1: HyperSpoof Pipeline 
   Architecture.</strong> The framework processes RGB facial images through three sequential stages: (1) <strong>MST++ Hyperspectral Reconstruction</strong> transforms 3-channel RGB input into rich 31-channel hyperspectral representation capturing material-specific spectral signatures across multiple wavelengths; (2) <strong>Spectral Attention Module</strong> applies intelligent feature selection to compress the 31-channel hyperspectral data into a discriminative 3-channel representation, highlighting spoof-relevant spectral patterns while suppressing noise; (3) <strong>EfficientNetB0 Classifier</strong> performs binary classification to distinguish genuine faces from presentation attacks. This end-to-end pipeline enables robust spoof detection without requiring specialized hyperspectral cameras.</em></p>
 </div>
