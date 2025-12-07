@@ -292,7 +292,6 @@ If you use HyperSpoof in your research, please cite our paper:
   - Our previous work combining spectral/spatial attention with Fourier transforms
   - Achieves 31.6 dB PSNR and 0.9442 SSIM on NTIRE 2022 dataset
   - CNN-based architecture with Spectral Angle Mapper (SAM) loss
-  - Authors: Pawan Soni, Pavan C Shekar, Vivek Kanhangad (IIT Indore)
 
 ### Hyperspectral Applications in Biometrics
 
@@ -301,7 +300,6 @@ If you use HyperSpoof in your research, please cite our paper:
   - First application of RGB-to-HSI reconstruction for video manipulation detection
   - Similar architecture: MST++ → Spectral Attention → EfficientNet classifier
   - Exposes manipulation artifacts invisible to RGB-based detectors
-  - Authors: Pavan C Shekar, Pawan Soni, Vivek Kanhangad
 
 ### Community Resources
 

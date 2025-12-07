@@ -166,3 +166,6 @@ credentials/
 *.pem
 *.key
 *.cert
+
+# Claude Code CLI
+.claude/
