@@ -7,14 +7,14 @@ HyperSpoof is a novel framework for face anti-spoofing that leverages hyperspect
 
 ## 🔬 Research Artifacts
 
-> **📓 [Original Training Notebooks →](notebooks/)**
+> **📓 [Original Training Notebooks →](#notebooks/)**
 >
-> All experiments reported in our paper were conducted using **Jupyter notebooks** available in the [`notebooks/`](notebooks/) directory. These contain the complete training pipelines, data preprocessing, and evaluation code used to generate published results:
+> All experiments reported in our paper were conducted using **Jupyter notebooks** available in the [`#notebooks/`](#notebooks/) directory. These contain the complete training pipelines, data preprocessing, and evaluation code used to generate published results:
 >
-> - **Cross-Attack Evaluation**: [`Crossdataset_RecodMpad_p1+hp_p2+cce_mstpp_our_pipeline.ipynb`](notebooks/Crossdataset_RecodMpad_p1+hp_p2+cce_mstpp_our_pipeline.ipynb) - Our main pipeline achieving **81.30% accuracy** on unseen attacks
-> - **Baseline Comparison**: [`Crossdataset_RecodMpad_p1+hp_p2+cce_simple_resnet50.ipynb`](notebooks/Crossdataset_RecodMpad_p1+hp_p2+cce_simple_resnet50.ipynb) - ResNet50 baseline (66.70% accuracy)
-> - **Cross-Dataset Test #1**: [`LOO_train_val_LCC_FASD+CASIA_test_RECOD_our_pipeline.ipynb`](notebooks/LOO_train_val_LCC_FASD+CASIA_test_RECOD_our_pipeline.ipynb) - Leave-one-out evaluation achieving **80.52% cross-domain accuracy**
-> - **Cross-Dataset Test #2**: [`LOO_train_val_LCC_FASD+Recod_test_casia_our_pipeline.ipynb`](notebooks/LOO_train_val_LCC_FASD+Recod_test_casia_our_pipeline.ipynb) - Alternative cross-dataset protocol
+> - **Cross-Attack Evaluation**: [`Crossdataset_RecodMpad_p1+hp_p2+cce_mstpp_our_pipeline.ipynb`](#notebooks/Crossdataset_RecodMpad_p1+hp_p2+cce_mstpp_our_pipeline.ipynb) - Our main pipeline achieving **81.30% accuracy** on unseen attacks
+> - **Baseline Comparison**: [`Crossdataset_RecodMpad_p1+hp_p2+cce_simple_resnet50.ipynb`](#notebooks/Crossdataset_RecodMpad_p1+hp_p2+cce_simple_resnet50.ipynb) - ResNet50 baseline (66.70% accuracy)
+> - **Cross-Dataset Test #1**: [`LOO_train_val_LCC_FASD+CASIA_test_RECOD_our_pipeline.ipynb`](#notebooks/LOO_train_val_LCC_FASD+CASIA_test_RECOD_our_pipeline.ipynb) - Leave-one-out evaluation achieving **80.52% cross-domain accuracy**
+> - **Cross-Dataset Test #2**: [`LOO_train_val_LCC_FASD+Recod_test_casia_our_pipeline.ipynb`](#notebooks/LOO_train_val_LCC_FASD+Recod_test_casia_our_pipeline.ipynb) - Alternative cross-dataset protocol
 >
 > 👉 **Start here** to reproduce paper results or adapt the pipeline for your datasets!
 
@@ -145,7 +145,7 @@ plot_confusion_matrix(y_true, y_pred, save_path="results/confusion_matrix.png")
 
 ```
 HyperSpoof/
-├── notebooks/                  # 🔬 Original research notebooks (START HERE!)
+├── #notebooks/                 # 🔬 Original research notebooks (START HERE!)
 │   ├── README.md              # Detailed experiment documentation
 │   ├── Crossdataset_RecodMpad_p1+hp_p2+cce_mstpp_our_pipeline.ipynb
 │   ├── Crossdataset_RecodMpad_p1+hp_p2+cce_simple_resnet50.ipynb
@@ -188,7 +188,7 @@ HyperSpoof/
 
 ### 📝 Repository Organization
 
-- **`notebooks/`** - **Original experimental code** used for all paper results. Use these to reproduce experiments or understand the full training pipeline.
+- **`#notebooks/`** - **Original experimental code** used for all paper results. Use these to reproduce experiments or understand the full training pipeline.
 - **`hyperspoof/`** - Clean, modular package implementation for easy integration into other projects.
 - **`examples/`** - Simple usage examples for the package API.
 - **`configs/`** - YAML configuration files for different experimental setups.
