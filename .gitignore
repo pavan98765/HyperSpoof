@@ -82,11 +82,16 @@ experiments/
 saved_models/
 pretrained/
 *.csv
+*.pdf
+*.mat
+
+# Images - exclude except in assets folder
 *.png
 *.jpg
 *.jpeg
-*.pdf
-*.mat
+!assets/*.png
+!assets/*.jpg
+!assets/*.jpeg
 
 # Exclude the paper PDF from tracking (if needed)
 Hyperspoof.pdf
@@ -166,6 +171,3 @@ credentials/
 *.pem
 *.key
 *.cert
-
-# Claude Code CLI
-.claude/
