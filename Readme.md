@@ -1,11 +1,17 @@
 # HyperSpoof
 
-[![CI/CD Pipeline](https://github.com/yourusername/HyperSpoof/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/yourusername/HyperSpoof/actions)
-[![PyPI version](https://badge.fury.io/py/hyperspoof.svg)](https://badge.fury.io/py/hyperspoof)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 HyperSpoof is a novel framework for face anti-spoofing that leverages hyperspectral reconstruction and attention mechanisms. By reconstructing hyperspectral information from standard RGB inputs and utilizing spectral attention layers, HyperSpoof enhances detection accuracy and robustness against sophisticated spoofing attacks, such as high-quality prints, video replays, and 3D masks.
+
+## 🏗️ Architecture Overview
+
+<div align="center">
+  <img src="assets/hyperspoof_pipeline.png" alt="HyperSpoof Pipeline Architecture" width="100%">
+  <p><em><strong>Figure 1: HyperSpoof Pipeline 
+  Architecture.</strong> The framework processes RGB facial images through three sequential stages: (1) <strong>MST++ Hyperspectral Reconstruction</strong> transforms 3-channel RGB input into rich 31-channel hyperspectral representation capturing material-specific spectral signatures across multiple wavelengths; (2) <strong>Spectral Attention Module</strong> applies intelligent feature selection to compress the 31-channel hyperspectral data into a discriminative 3-channel representation, highlighting spoof-relevant spectral patterns while suppressing noise; (3) <strong>EfficientNetB0 Classifier</strong> performs binary classification to distinguish genuine faces from presentation attacks. This end-to-end pipeline enables robust spoof detection without requiring specialized hyperspectral cameras.</em></p>
+</div>
 
 ## 🚀 Features
 
@@ -269,14 +275,36 @@ If you use HyperSpoof in your research, please cite our paper:
 - Special thanks to the dataset providers for making their data publicly available
 - This work was supported by [Funding Agency/Institution]
 
-## 📞 Contact
-
-- **Email**: your.email@example.com
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/HyperSpoof/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/HyperSpoof/discussions)
 
 ## 🔗 Related Projects
 
-- [Face Anti-Spoofing Survey](https://github.com/example/face-anti-spoofing-survey)
-- [Hyperspectral Image Processing](https://github.com/example/hyperspectral-processing)
-- [Deep Learning for Biometrics](https://github.com/example/deep-biometrics)
+### Hyperspectral Reconstruction
+
+- **[MST++: Multi-stage Spectral-wise Transformer](https://github.com/caiyuanhao1998/MST-plus-plus)** 🏆
+  - *Winner of NTIRE 2022 Spectral Recovery Challenge*
+  - State-of-the-art transformer-based method for RGB-to-HSI reconstruction
+  - Achieves 34.32 dB PSNR with efficient spectral-wise self-attention
+  - Comprehensive toolbox with 11+ spectral reconstruction algorithms
+  - The foundation model used in HyperSpoof's HSI reconstruction module
+
+- **[HyperSpectraNet: Spectral Attention for HSI Reconstruction](https://github.com/pavan98765/HyperSpectraNet)** 📄
+  - *IEEE Paper: [Link](https://ieeexplore.ieee.org/document/10631616/)*
+  - Our previous work combining spectral/spatial attention with Fourier transforms
+  - Achieves 31.6 dB PSNR and 0.9442 SSIM on NTIRE 2022 dataset
+  - CNN-based architecture with Spectral Angle Mapper (SAM) loss
+  - Authors: Pawan Soni, Pavan C Shekar, Vivek Kanhangad (IIT Indore)
+
+### Hyperspectral Applications in Biometrics
+
+- **[HyperFake: Hyperspectral Analysis for Deepfake Detection](https://arxiv.org/abs/2505.18587)** 🎭
+  - Our latest work applying hyperspectral reconstruction to deepfake detection
+  - First application of RGB-to-HSI reconstruction for video manipulation detection
+  - Similar architecture: MST++ → Spectral Attention → EfficientNet classifier
+  - Exposes manipulation artifacts invisible to RGB-based detectors
+  - Authors: Pavan C Shekar, Pawan Soni, Vivek Kanhangad
+
+### Community Resources
+
+- **[MST Toolbox](https://github.com/caiyuanhao1998/MST)** - Comprehensive spectral reconstruction toolbox with 15+ algorithms (MST, CST, DAUHST, BiSCI, HDNet, etc.)
+- **[Face Anti-Spoofing Awesome List](https://github.com/ee09115/spoofing-face-recognition)** - Curated list of face PAD papers and resources
+- **[NTIRE Challenges](https://data.vision.ee.ethz.ch/cvl/ntire22/)** - Annual spectral reconstruction benchmark and competition
